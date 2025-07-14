@@ -1,272 +1,167 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Poppins", sans-serif;
+    margin: 0; /* Remove margens padrão dos elementos */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui padding e borda dentro da largura/altura */
+    text-decoration: none; /* Remove sublinhado de links */
+    font-family: "Poppins", sans-serif; /* Define a fonte padrão */
 }
 
 body {
-    background-color: #000;
-    color: #eee;
-    font-size: 12px;
-    overflow: hidden;
+    background-color: #000; /* Fundo preto para o site */
+    color: #eee; /* Cor clara do texto */
+    font-size: 12px; /* Tamanho de fonte base */
+    overflow: hidden; /* Impede barras de rolagem */
 }
 
 header {
-    width: 80%;
-    height: 50px;
-    display: flex;
-    align-items: center;
+    width: 80%; /* Largura de 80% da tela */
+    height: 50px; /* Altura fixa */
+    display: flex; /* Usa flexbox para alinhamento */
+    align-items: center; /* Centraliza verticalmente */
     position: relative;
-    z-index: 2;
-    margin: auto;
+    z-index: 2; /* Fica acima do conteúdo */
+    margin: auto; /* Centraliza horizontalmente */
 }
 
 header a {
-    color: #eee;
-    margin-right: 40px;
-    font-weight: 300;
+    color: #eee; /* Cor dos links */
+    margin-right: 40px; /* Espaço entre os links */
+    font-weight: 300; /* Peso da fonte mais leve */
 }
 
 header a:hover {
-    opacity: 0.8;
+    opacity: 0.8; /* Diminui opacidade ao passar o mouse */
 }
 
 .container {
-    height: 100vh;
-    width: 100vw;
-    margin-top: -50px;
+    height: 100vh; /* Altura total da tela */
+    width: 100vw; /* Largura total da tela */
+    margin-top: -50px; /* Sobe 50px para alinhar com o header */
 }
 
 .container .list .item {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+    width: 100%; /* Ocupa toda a largura */
+    height: 100%; /* Ocupa toda a altura */
+    position: absolute; /* Sobrepõe os itens uns sobre os outros */
 }
 
 .container .list .item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(60%);
+    width: 100%; /* Imagem ocupa toda a largura do item */
+    height: 100%; /* Imagem ocupa toda a altura */
+    object-fit: cover; /* Cobre o item sem distorcer */
+    filter: brightness(60%); /* Escurece para destacar o texto */
 }
 
 .container .list .item .text {
     position: absolute;
-    top: 20%;
-    right: 20%;
-    padding-right: 30%;
-    width: 70%;
-    color: #eee;
-    text-shadow: 0 5px 10px #0004;
+    top: 20%; /* Posiciona 20% a partir do topo */
+    right: 20%; /* Posiciona 20% da borda direita */
+    padding-right: 30%; /* Espaço interno à direita */
+    width: 70%; /* Largura do bloco de texto */
+    color: #eee; /* Cor do texto */
+    text-shadow: 0 5px 10px #0004; /* Sombra suave para melhorar leitura */
 }
 
 .container .list .item .text .title {
-    font-size: 4em;
-    font-size: 700;
-    line-height: 1.4em;
+    font-size: 4em; /* Título grande */
+    font-size: 700; /* ⚠️ Erro: deveria ser font-weight: 700 */
+    line-height: 1.4em; /* Espaço entre linhas */
 }
 
 .container .list .item .text .description {
-    font-size: 1.1em;
+    font-size: 1.1em; /* Tamanho um pouco maior que o padrão */
 }
 
 .container .list .item .text .buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 120px);
-    grid-template-rows: 40px;
-    margin-top: 10px;
-    gap: 5px;
+    display: grid; /* Organiza botões em grade */
+    grid-template-columns: repeat(2, 120px); /* Duas colunas de 120px */
+    grid-template-rows: 40px; /* Altura de cada botão */
+    margin-top: 10px; /* Espaço acima dos botões */
+    gap: 5px; /* Espaço entre botões */
 }
 
 .container .list .item .text .buttons button {
-    border: none;
-    background-color: #eee;
-    letter-spacing: 1px;
-    font-weight: 600;
-    cursor: pointer;
-    text-transform: uppercase;
+    border: none; /* Sem borda */
+    background-color: #eee; /* Cor de fundo clara */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    font-weight: 600; /* Texto em negrito */
+    cursor: pointer; /* Cursor de clique */
+    text-transform: uppercase; /* Texto em caixa alta */
 }
 
 .container .list .item .text .buttons button:hover {
-    background-color: transparent;
-    border: 1px solid #eee;
-    color: #eee;
+    background-color: transparent; /* Fundo transparente no hover */
+    border: 1px solid #eee; /* Borda branca */
+    color: #eee; /* Texto branco */
 }
 
 .container .list .item .text .buttons button:nth-child(2) {
-    background-color: transparent;
-    border: 1px solid #eee;
-    color: #eee;
+    background-color: transparent; /* Sem fundo por padrão */
+    border: 1px solid #eee; /* Borda branca */
+    color: #eee; /* Texto branco */
 }
 
 .container .list .item .text .buttons button:nth-child(2):hover {
-    background-color: #eee;
-    color: #000;
+    background-color: #eee; /* Fundo branco no hover */
+    color: #000; /* Texto preto no hover */
 }
 
 .container .thumb {
     position: absolute;
-    bottom: 50px;
-    left: 50%;
-    display: flex;
-    gap: 20px;
+    bottom: 50px; /* Distância do fundo */
+    left: 50%; /* Centraliza horizontalmente */
+    display: flex; /* Itens lado a lado */
+    gap: 20px; /* Espaço entre as miniaturas */
 }
 
 .container .thumb .item {
-    width: 120px;
-    height: 160px;
+    width: 120px; /* Largura da thumb */
+    height: 160px; /* Altura da thumb */
     position: relative;
-    z-index: 3;
+    z-index: 3; /* Fica acima da imagem principal */
 }
 
 .container .thumb .item img {
-    width: 100%;
+    width: 100%; /* Ocupa toda a área da thumb */
     height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    filter: brightness(70%);
+    object-fit: cover; /* Cobre sem distorcer */
+    border-radius: 10px; /* Arredondamento suave */
+    filter: brightness(70%); /* Leve escurecimento */
 }
 
 .container .thumb .item .text {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
+    bottom: 10px; /* Posiciona no fundo da thumb */
+    left: 10px; /* Um pouco à direita */
 }
 
 .container .thumb .item .text h3 {
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 500; /* Peso intermediário */
+    font-size: 14px; /* Tamanho pequeno */
 }
 
 .container .arrow {
     display: flex;
     position: absolute;
-    bottom: 70px;
-    left: 280px;
+    bottom: 70px; /* Posição vertical */
+    left: 280px; /* Posição horizontal */
     width: 300px;
-    gap: 10px;
+    gap: 10px; /* Espaço entre botões */
 }
 
 .container .arrow button {
     border-radius: 10px;
     padding: 2px 12px;
     border: none;
-    background-color: #8888;
-    color: #eee;
+    background-color: #8888; /* Cor cinza translúcida */
+    color: #eee; /* Texto branco */
     cursor: pointer;
     font-weight: 700;
     font-size: 1.5em;
 }
 
 .container .arrow button:hover {
-    background-color: #eee;
-    color: #000;
-    transition: 0.7s;
-}
-
-/* Movimento das thumb */
-
-.container.next .thumb {
-    animation: effectNextThumb 0.3s linear 1 forwards;
-}
-
-@keyframes effectNextThumb {
-    from {
-        transform: translate(150px);
-    }
-}
-
-/* Movimento Ultima Thumb*/
-
-.thumb .item.animate {
-    animation: effectLastThumb 0.3s linear 1 forwards;
-}
-
-@keyframes effectLastThumb {
-    from {
-        width: 0;
-        opacity: 0;
-    }
-}
-
-/* Texto Principal – Estado inicial dos elementos de texto */
-.container .list .item .text .title,
-.container .list .item .text .description,
-.container .list .item .text .buttons {
-    transform: translateY(50px);        /* Empurra para baixo */
-    filter: blur(20px);                 /* Aplica desfoque */
-    opacity: 0;                         /* Torna invisível */
-    animation: none;                    /* Garante que nenhuma animação esteja ativa antes de iniciar */
-}
-
-/* Animação para o título */
-.container .list .item:nth-last-child(1) .text .title {
-    animation: showContent 0.5s ease-out forwards; /* Inicia animação e mantém estado final */
-    animation-delay: 0.7s;                         /* Começa após 0.3s */
-}
-
-/* Animação para a descrição */
-.container .list .item:nth-last-child(1) .text .description {
-    animation: showContent 0.5s ease-out forwards;
-    animation-delay: 1.2s;                         /* Começa após 1.2s */
-}
-
-/* Animação para os botões */
-.container .list .item:nth-last-child(1) .text .buttons {
-    animation: showContent 0.5s ease-out forwards;
-    animation-delay: 1.6s;                         /* Começa após 1.6s */
-}
-
-/* Keyframe da animação showContent */
-@keyframes showContent {
-    to {
-        transform: translateY(0);     /* Retorna à posição original */
-        filter: blur(0);              /* Remove desfoque */
-        opacity: 1;                   /* Torna visível */
-    }
-}
-
-/* Estilo inicial da imagem principal ao ativar o botão "next" */
-.container.next .list .item:nth-last-child(1) img {
-    width: 160px;
-    height: 200px;
-    position: absolute;
-    left: 50%;                        /* Centraliza horizontalmente */
-    bottom: 50px;                     /* Afasta do fundo */
-    border-radius: 20px;              /* Arredonda a borda */
-    animation: showMainImg 0.5s ease-out forwards; /* Animação principal da imagem */
-    will-change: width, height, bottom, left, border-radius; /* Melhora performance */
-}
-
-/* Keyframe da animação da imagem principal */
-@keyframes showMainImg {
-    to {
-        width: 100%;                /* Preenche toda a largura */
-        height: 100%;               /* Preenche toda a altura */
-        border-radius: 0;           /* Remove arredondamento */
-        bottom: 0;                  /* Encosta no fundo */
-        left: 0;                    /* Encosta na lateral esquerda */
-    }
-}
-
-/* Estilo inicial da imagem principal ao ativar o botão "back" */
-
-.container.back .list .item:nth-child(1) img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    animation: hidenMainImg 0.5s linear 1 forwards;
-    z-index: 2;
-}
-
-@keyframes hidenMainImg {
-    to {
-        width: 100px;
-        height: 140px;
-        left: 50%;
-        bottom: 50px;
-        border-radius: 10px;
-    }
+    background-color: #eee; /* Fica branco ao passar o mouse */
+    color: #000; /* Texto preto */
+    transition: 0.7s; /* Suaviza a transição */
 }
